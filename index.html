@@ -16,7 +16,7 @@
 
 
   <title>Visual Servoing NMPC Applied to UAVs for Photovoltaic Array Inspection</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -39,17 +39,6 @@
     .orcid-link .fa-orcid {
       color: #A6CE39; /* ORCID green color */
     }
-    .hero-body {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .left {
-      margin-right: auto;
-    }
-    .right {
-      margin-left: 30px; /* Adjust the space between the right logos */
-    }
   </style>
 
 </head>
@@ -58,11 +47,16 @@
 
   <header class="hero is-small">
     <div class="hero-body">
-      <div class="container">
-        <a href="https://aurova-projects.github.io/"><img src="static/images/logoAUROVA.png" alt="Logo AUROVA" class="left"  width="20%"/></a>
-        <img src="static/images/logo-ua.png" alt="Logo UA" class="right"  width="25%"/>
-        <!-- <img src="static/images/logo-umh.png" alt="Logo UMH" class="right"  width="20%"/> -->
-      </div>  
+      <div class="header_menu">
+        <a href="https://aurova-projects.github.io/" style="width: 20%;"><img src="static/images/logoAUROVA.png" alt="Logo AUROVA" class="header_image"/></a>
+        <div class="header_index">
+          <a href="https://aurova-projects.github.io/" target="_self" class="home"><i class="fas fa-home" style="transform: scale(0.75) translateY(10px);"></i><strong>AUROVA</strong>&emsp;</a>&emsp;
+          <a href="https://aurova-projects.github.io/team/index.html" target="_self">Team</a>&emsp;
+          <a href="https://aurova-projects.github.io/research/index.html" target="_self">Research</a>&emsp;
+          <a href="https://aurova-projects.github.io/projects/index.html" target="_self">Projects</a>
+        </div>
+        <a href="https://www.ua.es/" target="_blank"  style="width: 22%;"><img src="static/images/logo-ua.png" alt="Logo UA" class="header_image"/></a>
+      </div>
     </div>
     <div class="hline"></div>
   </header>
@@ -404,21 +398,30 @@
 </section>
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+<footer class="footer">
+  <div class="center">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+          <a href="http://www.aurova.ua.es/" target="_blank"
+            class="external-link button is-normal is-dark" style="margin-right: 15px;">
+            <span class="icon">
+              <img src="static/images/favicon.png" alt="AUROVA"/>
+            </span>
+          </a>
 
-        </div>
-      </div>
-    </div>
+          <a href="https://github.com/AUROVA-LAB/" target="_blank"
+            class="external-link button is-normal is-dark" style="margin-right: 15px;">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCdvrdxJmwsuiLrLtZ8XDWZw" target="_blank"
+            class="external-link button is-normal is-dark">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>   
+
   </div>
 </footer>
 

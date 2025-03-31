@@ -2,6 +2,12 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.footer{
+  background-color: rgb(199, 209, 253);
+  height: 75px;
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
 
 .footer .icon-link {
     font-size: 25px;
@@ -138,18 +144,117 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: attr(width);
+  text-align: center;
 }
 
-.left {
-  display: "";
-  float: left;
-  width: attr(width);
+.header_menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  width: 75%;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 32px;
+  font-weight: 350;
+  font-style: normal;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.right {
-  display: "";
-  float: right;
-  width: attr(width);
+.header_menu a {
+  display: inline-block; /* Ensures links only take up the space of their content */
+  max-width: 30%;
+}
+
+.header_index a.home {
+  display: inline-flex;
+  position: relative;
+  color: #000000;
+  transition: background-color 0.25s ease-out;
+  border-radius: 8px;
+}
+
+.header_index a.home:hover {
+  background-color: rgb(199, 209, 253); /* Change background color on hover */
+  border-radius: 8px;
+}
+
+.header_index a.home:hover::after{ 
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.header_index {
+  display: flex;
+  margin-top: 20px;
+}
+
+.header_index a {
+  display: inline-flex;
+  position:relative;
+  color:#000000;
+  
+}
+
+.header_image {
+  display: block;
+  height: auto;
+  margin-top: -15px;
+}
+
+.header_index a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #161616;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header_index a:hover::after{ 
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1300px) {
+  .header_index {
+      font-size: 26px; /* Limit max font size */
+  }
+}
+
+@media (max-width: 800px) {
+  .header_index {
+      font-size: 20px; /* Limit max font size */
+  }
+}
+
+/* Responsive: On mobile, switch to one column */
+@media (max-width: 768px) {
+  .header_menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .header_index {
+      flex: none;
+      width: 90%; /* Make them take most of the width */
+  }
+
+  .header_image {
+      width: 300%;
+      max-width: 300%;
+      height: auto;
+      display: block;
+      margin: auto;
+      margin-left: -100%;
+  }
 }
 
 .container_fig {
